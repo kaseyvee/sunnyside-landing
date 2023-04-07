@@ -25,15 +25,15 @@ const Hero: React.FC = () => {
         />
       </div>
 
-      <h1 className="hero_header">
-        WE ARE CREATIVES
-      </h1>
-
-      <div className="hero_arrow">
-        <img
-          src="general/icon-arrow-down.svg"
-          alt="arrow pointing down"
-        />
+      <div className="hero_main">
+        <h1 className="hero_main_header">WE ARE CREATIVES</h1>
+        
+        <div className="hero_main_header_arrow">
+          <img
+            src="general/icon-arrow-down.svg"
+            alt="arrow pointing down"
+          />
+        </div>
       </div>
     </div>
   )

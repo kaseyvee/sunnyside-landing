@@ -1,7 +1,8 @@
 .hero {
-  @include center(column);
+  @include center;
   position: relative;
   height: 30rem;
+  padding: 2rem;
   
   &_bg {   
     display: flex; 
@@ -18,10 +19,30 @@
     }
   }
 
-  &_header {
-    @include fraunces_bold;
-    color: $white;
-    letter-spacing: 0.25rem;
-    text-align: center;
+  &_main {
+    @include center(column);
+    gap: 2.5rem;
+
+    &_header {
+      @include fraunces_bold;
+      color: $white;
+      letter-spacing: 0.5rem;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .hero {
+    height: 100vh;
+
+    &_main {
+      gap: 5.5rem;
+
+      &_header {
+        font-size: 3rem;
+        letter-spacing: 0.75rem;
+      }
+    }
   }
 }
