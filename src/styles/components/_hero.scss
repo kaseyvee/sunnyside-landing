@@ -22,6 +22,7 @@
   &_main {
     @include center(column);
     gap: 3rem;
+    transition-duration: 200ms;
 
     &_header {
       @include fraunces_bold;
@@ -37,12 +38,22 @@
     height: 100vh;
 
     &_main {
-      gap: 5.5rem;
+      gap: 5rem;
 
       &_header {
         font-size: 3rem;
         letter-spacing: 0.75rem;
       }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .hero {
+    align-items: flex-start;
+
+    &_main {
+      margin-top: 11rem;
     }
   }
 }
