@@ -1,6 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:wght@700;900&display=swap');
 
 @mixin barlow {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+}
+
+@mixin barlow_bold {
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
 }

@@ -1,0 +1,73 @@
+.menu-items {
+  @include center(column);
+  gap: 1.5rem;
+  position: absolute;
+  background-color: $white;
+  top: 7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 4rem);
+  padding: 2rem 0;
+
+  &_items {
+    @include barlow_bold;
+    @include center(column);
+    color: $grey;
+    gap: 1.5rem
+  }
+
+  &_button {
+    @include fraunces;
+    background-color: $yellow;
+    color: $darkBlue;
+    border: none;
+    border-radius: 30px;
+    padding: 1rem 1.5rem;
+    transition-duration: 200ms;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $transparentYellow;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1.98rem;
+    right: 0;
+    border-bottom: 2rem solid $white;
+    border-left: 2rem solid transparent;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-items {
+    position: static;
+    flex-direction: row;
+    gap: 3rem;
+    transform: none;
+    background-color: transparent;
+    width: fit-content;
+
+    &_items {
+      @include barlow;
+      flex-direction: row;
+      gap: 3rem;
+      color: $white;
+    }
+
+    &_button {
+      background-color: $white;
+
+      &:hover {
+        background-color: $transparentWhite;
+        color: $white;
+      }
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+}

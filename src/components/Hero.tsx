@@ -8,13 +8,13 @@ const Hero: React.FC = () => {
   }, [])
 
   function handleIsMobile() {
-    if (window.innerWidth > 480) {
+    if (window.innerWidth >= 480) {
       return setIsMobile(false);
     }
     return setIsMobile(true);
   }
 
-  addEventListener("resize", handleIsMobile)
+  addEventListener("resize", handleIsMobile);
 
   return (
     <div className="hero">

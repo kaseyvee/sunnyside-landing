@@ -2,7 +2,7 @@
   @include center;
   position: relative;
   height: 30rem;
-  padding: 2rem;
+  padding: 0 2rem;
   
   &_bg {   
     display: flex; 
@@ -21,7 +21,7 @@
 
   &_main {
     @include center(column);
-    gap: 2.5rem;
+    gap: 3rem;
 
     &_header {
       @include fraunces_bold;
@@ -32,7 +32,7 @@
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 481px) {
   .hero {
     height: 100vh;
 

@@ -1,20 +1,24 @@
+$alpha: 0.2;
+
 // Primaries
 
-$red: hsl(7, 99%, 70%);
-$yellow: hsl(51, 100%, 49%);
-$darkCyan: hsl(167, 40%, 24%);
-$lightCyan: hsl(168, 34%, 41%);
-$blue: hsl(198, 62%, 26%);
+$red: #fe7867;
+$yellow: #fad400;
+$transparentYellow: hsla(51, 100%, 49%, $alpha);
+$darkCyan: #26574c;
+$lightCyan: #458c7e;
+$blue: #19536b;
 
 // Neutrals
 
-$white: hsl(0, 0%, 100%);
+$white: #ffffff;
+$transparentWhite: hsla(0, 0%, 100%, $alpha);
 
-$lightGrey: hsl(210, 4%, 67%);
-$grey: hsl(232, 10%, 55%);
-$darkGrey: hsl(213, 9%, 39%);
+$lightGrey: #a7abae;
+$grey: #818498;
+$darkGrey: #5a636c;
 
-$darkBlue: hsl(212, 27%, 19%);
+$darkBlue: #23303e;
 
 
 // ### Primary
