@@ -1,10 +1,12 @@
+import Hero from "./components/Hero";
 
-function App() {
+const App: React.FC = () => {
 
   return (
-    <div className="App">
-    </div>
+    <main className="App">
+      <Hero />
+    </main>
   )
 }
 
-export default App
+export default App;

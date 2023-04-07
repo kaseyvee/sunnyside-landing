@@ -1,0 +1,27 @@
+.hero {
+  @include center(column);
+  position: relative;
+  height: 30rem;
+  
+  &_bg {   
+    display: flex; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    
+    img {
+      object-fit: cover;
+      object-position: bottom;
+      width: 100%;
+    }
+  }
+
+  &_header {
+    @include fraunces_bold;
+    color: $white;
+    letter-spacing: 0.25rem;
+    text-align: center;
+  }
+}
