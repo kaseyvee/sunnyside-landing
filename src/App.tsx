@@ -4,12 +4,14 @@ import Bottom from "./components/Bottom";
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Offers from "./components/Offers";
 
 const App: React.FC = () => {
 
   return (
     <main className="App">
       <Hero />
+      <Offers />
       <Testimonials />
       <Bottom />
       
