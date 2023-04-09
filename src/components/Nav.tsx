@@ -34,7 +34,7 @@ const Nav: React.FC = () => {
       <div className="nav_main">
         <div className="nav_main_logo">
           <img
-            src="general/logo.svg"
+            src="general/logo-nav.svg"
             alt="sunnyside logo"
           />
         </div>

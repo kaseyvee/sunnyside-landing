@@ -36,7 +36,7 @@ const data = {
       testimony: "Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!",
       name: "Jennie F.",
       title: "Business Owner",
-      image: "general/image-jenny.jpg"
+      image: "general/image-jennie.jpg"
     }
   ]
 }

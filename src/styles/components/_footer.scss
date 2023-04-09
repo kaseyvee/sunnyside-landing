@@ -1,0 +1,18 @@
+.footer {
+  @include center(column);
+  background-color: $lightCyan;
+  padding: 4rem 1rem;
+
+  &_menu {
+    @include barlow;
+    color: $cyan;
+    display: flex;
+    gap: 2.5rem;
+    padding: 2rem 0 4rem 0;
+  }
+
+  &_socials {
+    @include center;
+    gap: 1.5rem;
+  }
+}
