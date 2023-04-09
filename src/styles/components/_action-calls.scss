@@ -1,0 +1,110 @@
+.action-calls {
+
+  &_item {
+
+    &:last-child {
+      .action-calls_item_content_container_learn {
+        &::before {
+          background-color: $transparentRed;
+        }
+
+        &:hover::before {
+          background-color: $red;
+        }
+      }
+    }
+
+    display: flex;
+    flex-direction: column;
+
+    &_content {
+      background-color: $white;
+      padding: 3rem 1.5rem;
+      
+      &_container {
+        @include fraunces_bold;
+        @include center(column);
+        gap: 2rem;
+        color: $darkBlue;
+        text-align: center;
+
+        &_description {
+          @include barlow;
+          line-height: 1.5rem;
+          color: $darkGrey;
+        }
+  
+        &_learn {
+          position: relative;
+          z-index: 0;
+
+          &::before {
+            position: absolute;
+            content: "";
+            width: 115%;
+            height: 0.75rem;
+            background-color: $transparentYellow;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: -1;
+            transform: translate(-0.5rem, 0.2rem);
+            transition-duration: 200ms;
+          }
+          
+          &:hover::before {
+            background-color: $yellow;
+          }
+
+        }
+      }
+    }
+
+    &_image-container {
+      display: flex;
+      width: 100%;
+      
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+  }
+}
+
+@media (min-width: 481px) {
+  .action-calls {
+
+    &_item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      &_content {
+        @include center;
+
+        &_container {
+          align-items: baseline;
+          text-align: left;
+          max-width: 25rem;
+
+          &_header {
+            font-size: 2.25rem;
+          }
+        }
+      }
+      
+      &:first-child {
+        div {
+          grid-column: 1;
+          grid-row: 1;
+        }
+
+        picture {
+          grid-column: 2;
+        }
+      }
+    }
+  }
+}

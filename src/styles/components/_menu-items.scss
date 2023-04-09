@@ -8,12 +8,21 @@
   transform: translateX(-50%);
   width: calc(100% - 4rem);
   padding: 2rem 0;
+  z-index: 100;
 
   &_items {
     @include barlow_bold;
     @include center(column);
     color: $grey;
-    gap: 1.5rem
+    gap: 1.5rem;
+    
+    a {
+      transition-duration: 200ms;
+
+      &:hover {
+        filter: brightness(0.5);
+      }
+    }
   }
 
   &_button {

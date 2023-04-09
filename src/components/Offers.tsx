@@ -10,7 +10,7 @@ const Offers: React.FC = () => {
       <div className="offers_item" key={index}>
         <picture className="offers_item_image-container">
           <source
-            media="(min-width: 481px)" srcSet={`_desktop/image-${offer.image}.jpg`}
+            media="(min-width: 1000px)" srcSet={`_desktop/image-${offer.image}.jpg`}
           />
           <img
             src={`_mobile/image-${offer.image}.jpg`}

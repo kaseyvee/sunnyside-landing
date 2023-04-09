@@ -46,6 +46,7 @@ const Nav: React.FC = () => {
             <img
               src="general/icon-hamburger.svg"
               alt="sunnyside logo"
+              style={navOpen ? { opacity: 0.3 } : undefined}
             />
           </div>
         }

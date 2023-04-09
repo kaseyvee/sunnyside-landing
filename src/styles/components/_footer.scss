@@ -9,10 +9,26 @@
     display: flex;
     gap: 2.5rem;
     padding: 2rem 0 4rem 0;
+
+    a {
+      transition-duration: 200ms;
+
+      &:hover {
+        color: $white
+      }
+    }
   }
 
   &_socials {
     @include center;
     gap: 1.5rem;
+  
+    img {
+      transition-duration: 200ms;
+      
+      &:hover {
+        filter: brightness(0) invert(1);
+      }
+    }
   }
 }

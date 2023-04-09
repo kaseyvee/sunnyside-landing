@@ -1,8 +1,9 @@
-$alpha: 0.2;
+$alpha: 0.3;
 
 // Primaries
 
 $red: #fe7867;
+$transparentRed: hsla(7, 99%, 70%, $alpha);
 $yellow: #fad400;
 $transparentYellow: hsla(51, 100%, 49%, $alpha);
 $darkCyan: #26574c;
