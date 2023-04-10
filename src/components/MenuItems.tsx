@@ -1,6 +1,17 @@
+import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
+
 const MenuItems: React.FC = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
+
   return (
-    <div className="menu-items">
+    <motion.div
+      className="menu-items"
+      animate={{
+        scaleY: [0, 1],
+        x: isMobile ? "-50%" : 0
+      }}
+    >
       <div className="menu-items_items">
         <a href="">About</a>
         <a href="">Services</a>
@@ -8,7 +19,7 @@ const MenuItems: React.FC = () => {
       </div>
 
       <button className="menu-items_button">CONTACT</button>
-    </div>
+    </motion.div>
   )
 }
 

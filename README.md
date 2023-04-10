@@ -31,3 +31,4 @@ Users should be able to:
 - Sass
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
+- Framer Motion

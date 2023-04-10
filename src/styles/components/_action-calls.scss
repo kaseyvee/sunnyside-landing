@@ -44,12 +44,13 @@
             width: 115%;
             height: 0.75rem;
             background-color: $transparentYellow;
+            border-radius: 10px;
             left: 0;
             right: 0;
             bottom: 0;
             margin: auto;
             z-index: -1;
-            transform: translate(-0.5rem, 0.2rem);
+            transform: translate(-0.5rem, 0.1rem);
             transition-duration: 200ms;
           }
           

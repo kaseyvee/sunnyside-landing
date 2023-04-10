@@ -32,12 +32,13 @@ const Hero: React.FC = () => {
       <div className="hero_main">
         <h1 className="hero_main_header">WE ARE CREATIVES</h1>
         
-        <div className="hero_main_header_arrow">
+        <a href="#action-calls" className="hero_main_header_arrow">
           <img
             src="general/icon-arrow-down.svg"
             alt="arrow pointing down"
+            className="fa-bounce"
           />
-        </div>
+        </a>
       </div>
     </div>
   )

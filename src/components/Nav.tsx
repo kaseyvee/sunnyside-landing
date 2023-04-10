@@ -1,24 +1,16 @@
 import { useEffect, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 import MenuItems from "./MenuItems";
 
 const Nav: React.FC = () => {
-  const [isDesktop, setIsDesktop] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
+  const isDesktop = useMediaQuery({ query: '(min-width: 769px)' });
 
   useEffect(() => {
-    handleIsDesktop();
     setNavOpen(false);
   }, [])
 
-  function handleIsDesktop() {
-    if (window.innerWidth <= 768) {
-      return setIsDesktop(false);
-    }
-    return setIsDesktop(true);
-  }
-
   addEventListener("resize", () => {
-    handleIsDesktop();
     setNavOpen(false);
   });
 

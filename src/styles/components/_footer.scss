@@ -25,6 +25,7 @@
   
     img {
       transition-duration: 200ms;
+      cursor: pointer;
       
       &:hover {
         filter: brightness(0) invert(1);

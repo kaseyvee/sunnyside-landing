@@ -1,4 +1,5 @@
 import data from "../data";
+import { motion } from "framer-motion";
 
 const Offers: React.FC = () => {
 
@@ -18,7 +19,12 @@ const Offers: React.FC = () => {
           />
         </picture>
 
-        <div className="offers_item_content">
+        <motion.div
+          className="offers_item_content"
+          whileInView={{ y: [100, 0], opacity: [0, 1] }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
           <h1 className="offers_item_content_header">
             {offer.header}
           </h1>
@@ -26,7 +32,7 @@ const Offers: React.FC = () => {
           <p className="offers_item_content_description">
             {offer.description}
           </p>
-        </div>
+        </motion.div>
       </div>
     )
   })

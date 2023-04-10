@@ -1,13 +1,20 @@
 import data from "../data";
+import { motion } from "framer-motion";
 
 const Testimonials: React.FC = () => {
 
-  const testimonialsList = data.testimonials.map((testimonial) => {
+  const testimonialsList = data.testimonials.map((testimonial, i) => {
 
     const index = data.testimonials.indexOf(testimonial);
 
     return (
-      <div className="testimonials_container_item" key={index}>
+      <motion.div
+        className="testimonials_container_item"
+        key={index}
+        viewport={{ once: true }}
+        whileInView={{ y: [100, 0], opacity: [0, 1] }}
+        transition={{ duration: 1, delay: i * 0.3}}
+      >
         <img
           className="testimonials_container_item_image"
           src={testimonial.image}
@@ -27,7 +34,7 @@ const Testimonials: React.FC = () => {
             {testimonial.title}
           </h3>
         </div>
-      </div>
+      </motion.div>
     )
   })
 
@@ -36,7 +43,9 @@ const Testimonials: React.FC = () => {
       <h1 className="testimonials_header">
         CLIENT TESTIMONIALS
       </h1>
-      <div className="testimonials_container">
+      <div
+        className="testimonials_container"
+      >
         {testimonialsList}
       </div>
     </div>
