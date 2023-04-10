@@ -14,7 +14,7 @@ const App: React.FC = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowOverlay(false);
-    }, 750)
+    }, 1000)
   }, [])
 
   return (

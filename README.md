@@ -14,21 +14,22 @@ Users should be able to:
 ### Screenshots
 
 #### Desktop View
-![Desktop View](https://i.imgur.com/Ymfe2vP.png)
+![Desktop View](https://i.imgur.com/YIcgzAE.png)
+![Desktop View](https://i.imgur.com/BQbRBtg.png)
 
 #### Mobile View
 <p float="left">
-  <img src="https://i.imgur.com/MoXz1pJ.png" width="305">
-  <img src="https://i.imgur.com/eWBADAv.png" width="305">
+  <img src="https://i.imgur.com/AMyqikE.png" width="305">
+  <img src="https://i.imgur.com/R5aBQIm.png" width="305">
 </p>
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Grid
-- Flexbox
 - Sass
 - Mobile-first workflow
+- Grid
+- Flexbox
 - [React](https://reactjs.org/) - JS library
-- Framer Motion
+- Framer Motion - React animation library
