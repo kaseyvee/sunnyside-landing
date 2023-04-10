@@ -10,10 +10,10 @@ const ActionCalls: React.FC = () => {
       <div className="action-calls_item" key={index}>
         <picture className="action-calls_item_image-container">
           <source
-            media="(min-width: 481px)" srcSet={`_desktop/image-${actionCall.image}.jpg`}
+            media="(min-width: 481px)" srcSet={`desktop/image-${actionCall.image}.jpg`}
           />
           <img
-            src={`_mobile/image-${actionCall.image}.jpg`}
+            src={`mobile/image-${actionCall.image}.jpg`}
             alt="milk bottles and clouds on blue background"
           />
         </picture>

@@ -18,12 +18,16 @@ const Hero: React.FC = () => {
 
   return (
     <div className="hero">
-      <div className="hero_bg">
+      <picture className="hero_bg">
+        <source
+          media="(min-width: 1000px)"
+          srcSet="desktop/image-header.jpg"
+        />
         <img
-          src={`_${isMobile ? "mobile" : "desktop"}/image-header.jpg`}
+          src="mobile/image-header.jpg"
           alt="orange cross section on sky blue background"
         />
-      </div>
+      </picture>
 
       <div className="hero_main">
         <h1 className="hero_main_header">WE ARE CREATIVES</h1>
