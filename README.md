@@ -25,11 +25,15 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Sass
-- Mobile-first workflow
-- Grid
-- Flexbox
 - [React](https://reactjs.org/) - JS library
 - Framer Motion - React animation library
+- Sass
+- Grid
+- Flexbox
+- Mobile-first workflow
+
+### What I learned
+
+To go with the vibrant and fun theme of this project, I wanted to use this as an opportunity to look into some animation libraries. Here, I used Framer Motion to add some visual interactivity as the user scrolls through the page and on opening the nav menu on mobile.
+
+This challenge also helped with starting to get comfortable using pseudo elements such as ```::before``` to add some extra visual spice!
